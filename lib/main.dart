@@ -6,8 +6,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     Widget enterButton = Padding(
@@ -34,14 +32,14 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Grade Tool'),
         ),
-        body: ListView(children: [
-          textSection,
-          textEnterForm,
-          enterButton,
-        ]),
+        body: ListView(
+          children: [
+            textSection,
+            textEnterForm,
+            enterButton,
+          ],
+        ),
       ),
     );
   }
 }
-
-class _formKey {}
